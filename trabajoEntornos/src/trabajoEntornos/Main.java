@@ -6,7 +6,7 @@ public class Main {
 		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
 		String matricula,tipo;
-		int numCabina,contCabina,opc,contCabinaA;
+		int numCabina,contCabina = 0,opc,contCabinaA = 0;
 		Cabina[] cabinas = new Cabina[4];
 		
 		do{
@@ -14,6 +14,12 @@ public class Main {
 			opc= sc.nextInt();
 			switch(opc){
 			case 1:
+				System.out.println("dime el numero de la cabina que abrir");
+				numCabina = sc.nextInt();
+				if (numCabina < 1 || numCabina > 4){
+					System.out.println("La cabina no existe");
+					break;
+				}
 				break;
 			case 2:
 				break;
