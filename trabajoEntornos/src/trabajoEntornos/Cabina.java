@@ -1,5 +1,5 @@
 package trabajoEntornos;
 
-public class Cabina {
+public abstract class Cabina  {
 
 }
