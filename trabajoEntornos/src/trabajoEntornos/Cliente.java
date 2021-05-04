@@ -8,9 +8,10 @@ public class Cliente extends Vector {
 		super();
 
 	}
+	
+	public void aï¿½adir(Object o) {
+		//super.add(0,o);
 
-	public void añadir(Object o) {
-		// super.add(0,o);
 		super.add(o);
 
 	}
@@ -25,6 +26,5 @@ public class Cliente extends Vector {
 		return super.remove(super.size() - 1);
 	}
 	
-	
-}
+
 
