@@ -1,5 +1,14 @@
 package trabajoEntornos;
 
-public class Ficheros {
+import java.nio.*;
 
+public class Ficheros {
+	
+	public static void leer() {
+		
+	}
+	
+	public static void escribir() {
+		
+	}
 }

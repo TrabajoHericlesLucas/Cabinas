@@ -23,11 +23,47 @@ public double Cobrar(int kilometros) {
 			precio = 4;
 		if (kilometros > 30)
 			precio = kilometros*0.25;
+		Cli.borrar();
 		return precio;
 	}
+
 
 public String getTipo() {
 	return tipo;
 }
 
+public int getNum() {
+	return num;
+}
+
+public boolean isEstado() {
+	return estado;
+}
+
+public void entrarCola(String matricula) {
+	Cli.añadir(matricula);
+	contVehiculos++;
+}
+
+public void mostrarCliente(int numero) {
+	Cli.mostrar(numero);
+}
+
+public void EliminarCliente() {
+	Cli.borrar();
+}
+
+public int getContVehiculos() {
+	return contVehiculos;
+}
+
+public void abrir() {
+	this.estado = true;
+	Hapertura = LocalTime.now();
+}
+
+public void cerrar() {
+	this.estado = false;
+	Hcerrar = LocalTime.now();
+}
 }
